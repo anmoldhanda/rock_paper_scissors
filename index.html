@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rock paper scissors</title>
+    <!-- ========================================== custom css ========================================== -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="projectdetails-container">
+      <h2 class="headline">rock paper scissors game</h2>
+      <p class="description">user v/s computer</p>
+    </div>
+    <div class="rock_paper_scissors_container">
+      <div class="gamecontainer">
+        <div class="photobox" id="rock">
+          <img src="images/rock.png" alt="rock photo" class="photo" />
+        </div>
+        <div class="photobox" id="paper">
+          <img src="images/paper.png" alt="paper photo" class="photo" />
+        </div>
+        <div class="photobox" id="scissors">
+          <img src="images/scissors.png" alt="scissors photo" class="photo" />
+        </div>
+      </div>
+      <div class="scoreboard_container">
+        <div class="score">
+          <p id="userscore">0</p>
+          <p class="playertext" id="current_playingusername">user</p>
+        </div>
+        <div class="score">
+          <p id="computerscore">0</p>
+          <div class="playertext">computer</div>
+        </div>
+      </div>
+      <div class="winner_indication_container">
+        <h3 id="winner_title"></h3>
+      </div>
+    </div>
+      <!-- =================================== new game username overlay notification =================================== -->
+    <div class="overlay_notification_container">
+          <div class="overlay_notification_box">
+            <form action="#" method="get" id="game_username_form">
+                <label for="username" id="username_label">choose username for game</label>
+                <input type="text" name="username" id="input_username" placeholder="Enter your username for the game">
+              <button id="submitgame_formbtn">submit</button>
+            </form>
+          </div>
+    </div>
+    <!-- ========================================== custom js ========================================== -->
+    <script src="main.js"></script>
+  </body>
+</html>

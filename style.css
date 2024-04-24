@@ -1,0 +1,165 @@
+/* ========================================== google fonts ========================================== */
+@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass Mono", monospace;
+}
+
+.projectdetails-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.headline {
+  text-transform: capitalize;
+  font-weight: normal;
+}
+
+.description {
+  color: grey;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.rock_paper_scissors_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gamecontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.photobox {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.photo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  padding: 3px;
+}
+
+.photobox:hover {
+  opacity: 0.8;
+}
+
+.photobox:hover .photo {
+  border: 1px solid black;
+}
+
+.scoreboard_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.score {
+  text-align: center;
+  text-transform: capitalize;
+  border-bottom: 1px solid grey;
+}
+
+.winner_indication_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#winner_title {
+  text-transform: capitalize;
+}
+
+#winner_title.user_winning {
+  padding: 7px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #75f775;
+  color: white;
+}
+
+#winner_title.computer_winning {
+  padding: 7px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: crimson;
+  color: white;
+}
+
+/* ====================================== new game username overlay notification ====================================== */
+.overlay_notification_container {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  /* display: none; */
+}
+
+.overlay_notification_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+#game_username_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  text-transform: capitalize;
+}
+
+#input_username {
+  width: 100%;
+  padding: 5px 7px;
+  outline: none;
+  background: transparent;
+}
+
+#input_username.error {
+  border: 1px solid crimson;
+}
+
+#submitgame_formbtn {
+  background: cornflowerblue;
+  color: white;
+  padding: 5px 8px;
+  border: 1px solid transparent;
+  text-transform: capitalize;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
